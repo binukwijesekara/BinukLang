@@ -1,0 +1,25 @@
+// BinukLang Random Number Guessing Game!
+danna secret = ahamben(1, 100);
+danna guess = 0;
+danna attempts = 0;
+
+penwanna("=== BinukLang Number Guessing Game ===");
+penwanna("1 th 100 th athara rahas ilakkama hoyanna!");
+
+thuru (guess != secret) {
+    penwanna("Oya hithana ilakkama type karanna:");
+    guess = ganna();
+    attempts = attempts + 1;
+
+    nam (guess < secret) {
+        penwanna("Eka podi wadiyi! Loku ilakkamak try karanna.");
+    } naththan {
+        nam (guess > secret) {
+            penwanna("Eka loku wadiyi! Podi ilakkamak try karanna.");
+        } naththan {
+            penwanna("NIYAMAI! Oya hari ilakkama hoyagaththa!");
+            penwanna("Uthsaha karapu wara ganana:");
+            penwanna(attempts);
+        }
+    }
+}
