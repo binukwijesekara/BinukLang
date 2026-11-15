@@ -25,4 +25,5 @@
 Compile all modules using `gcc`:
 
 ```bash
-gcc src/main.c src/lexer.c src/parser.c src/interpreter.c -o binuk
+gcc main.c lexer.c parser.c interpreter.c -o binuk
+./binuk game.bnk
